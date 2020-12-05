@@ -1,3 +1,5 @@
+package day2
+
 class Day2 {
 
 // list of passwords as input
