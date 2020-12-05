@@ -15,6 +15,16 @@ class Day5 {
     private val boardingPasses : MutableList<BoardingPass> = mutableListOf()
 
     private fun getMaxId(): Int = boardingPasses.maxOf{ it.seatId }
+    private fun getMinId(): Int = boardingPasses.minOf{ it.seatId }
+
+    private fun getMyId(): Int{
+        var minId = getMinId()
+        boardingPasses.sortedBy { it.seatId }.forEach {
+            if (minId != it.seatId) return minId
+            minId++
+        }
+        return minId
+    }
 
     private fun onBoardPasses(){
         getInputList().forEach {line ->
@@ -53,8 +63,7 @@ class Day5 {
 
     fun main() {
         onBoardPasses()
-        println(getMaxId())
-
+        println(getMyId())
     }
 }
 
