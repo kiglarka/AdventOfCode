@@ -1,4 +1,5 @@
 fun main(args: Array<String>) {
-    // put code here
+    val day2 = Day2()
+    day2.main()
 
 }
