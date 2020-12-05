@@ -1,4 +1,4 @@
-package day4
+import day4.Day4
 
 fun main(args: Array<String>) {
     val day4 = Day4()
