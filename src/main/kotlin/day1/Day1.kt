@@ -1,3 +1,5 @@
+package day1
+
 class Day1 {
 
     // gold: starfish -> stars
