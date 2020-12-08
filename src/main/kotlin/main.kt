@@ -4,6 +4,7 @@ import day2.Day2
 import day3.Day3
 import day5.Day5
 import day6.Day6
+import day7.Day7
 
 fun main(args: Array<String>) {
     /*
@@ -17,9 +18,10 @@ fun main(args: Array<String>) {
     day4.main()
     val day5 = Day5()
     day5.main()
-
-     */
     val day6 = Day6()
     day6.main()
+     */
+    val day7 = Day7()
+    day7.main()
 
 }

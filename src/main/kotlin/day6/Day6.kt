@@ -1,7 +1,6 @@
 package day6
 
 import java.io.File
-import kotlin.streams.toList
 
 class Day6 {
 
