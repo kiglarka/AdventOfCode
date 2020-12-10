@@ -54,6 +54,9 @@ class Day8 {
         }
     }
 
+    // part 2: a jmp is supposed to be a nop, or a nop is supposed to be a jmp
+    // attempting to execute an instruction immediately after the last instruction in the file
+
     fun main(){
         val instructions = getPairs(getListFromInput())
         val game = Game(instructions)
